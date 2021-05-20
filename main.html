@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Bowhaus</title>
+</head>
+
+<body>
+  <h1>Bowhaus</h1>
+  <div class="pictures">
+    <div class="dogs">
+      <div class="results">
+        <div id="dog_result" class="result">
+          <p>Dog Space</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="dog_btn">Get Dog</button>
+      </div>
+    </div>
+
+    <div class="shiba">
+      <div class="results">
+        <div id="dog_result2" class="result2">
+          <p>Dog Space</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="dog_btn2">Get Dog</button>
+      </div>
+    </div>
+
+    <div class="dog3">
+      <div class="results">
+        <div id="dog_result3" class="result3">
+          <p>Dog Space</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="dog_btn3">Get Dog</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dog_keys">
+    <button id="A" class="key" onclick="ringAA();">A</button>
+    <button id="S" class="key" onclick="ringSS();">S</button>
+    <button id="D" class="key" onclick="ringDD();">D</button>
+    <button id="F" class="key" onclick="ringFF();">F</button>
+    <button class="none"> </button>
+    <button id="J" class="key" onclick="ringJJ();">J</button>
+    <button id="K" class="key" onclick="ringKK();">K</button>
+    <button id="L" class="key" onclick="ringLL();">L</button>
+    <button id="+" class="key" onclick="ring();">+</button>
+  </div>
+
+  <audio id="AA" preload="auto">
+    <source src="audio/2.mp3" type="audio/mp3">
+  </audio>
+  <audio id="SS" preload="auto">
+    <source src="audio/4.mp3" type="audio/mp3">
+  </audio>
+  <audio id="DD" preload="auto">
+    <source src="audio/6.mp3" type="audio/mp3">
+  </audio>
+  <audio id="FF" preload="auto">
+    <source src="audio/8.mp3" type="audio/mp3">
+  </audio>
+  <audio id="JJ" preload="auto">
+    <source src="audio/14.mp3" type="audio/mp3">
+  </audio>
+  <audio id="KK" preload="auto">
+    <source src="audio/15.mp3" type="audio/mp3">
+  </audio>
+  <audio id="LL" preload="auto">
+    <source src="audio/16.mp3" type="audio/mp3">
+  </audio>
+  <audio id="++" preload="auto">
+    <source src="audio/17.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="maim.js"></script>
+  <script type="text/javascript">
+    function ringAA() { document.getElementById("AA").play(); }
+    function ringSS() { document.getElementById("SS").play(); }
+    function ringDD() { document.getElementById("DD").play(); }
+    function ringFF() { document.getElementById("FF").play(); }
+    function ringJJ() { document.getElementById("JJ").play(); }
+    function ringKK() { document.getElementById("KK").play(); }
+    function ringLL() { document.getElementById("LL").play(); }
+    function ring() { document.getElementById("++").play(); }
+
+
+  </script>
+
+
+</body>
+
+</html>
